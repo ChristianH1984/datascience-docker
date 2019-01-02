@@ -5,5 +5,8 @@ services:
       context: .
     ports:
       - "8888:8888"
+      - "6006:6006"
     volumes:
       - ./notebooks:/notebooks
+    environment:
+      - TENSORFLOW_LOGDIR="tensorflow_logdir"
